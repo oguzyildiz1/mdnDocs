@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            
+            background-color: rgba(3, 40, 99, 0.879);
+            color: rgb(190, 188, 188);
+        }
+
+        p {
+            text-wrap: wrap;
+        }
+        p:first-child::first-line{
+            font-size: 1.2rem;
+            text-indent: ;
+            text-transform: capitalize;
+        }
+        p:first-child:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        div {
+            padding: 10px 20px;
+            margin: 0;
+            background-color: rgba(12, 12, 182, 0.625);
+            width: 50vw;
+            height: 50vh;
+            overflow-y: scroll;
+        }
+        a:hover {
+            color: rgb(118, 118, 243);
+        }
+        a:visited {
+            color: red;
+        }
+        a:focus {
+            color: yellow;
+        }
+        a:link {
+            color: blueviolet;
+        }
+
+        table {
+            border: collapse;
+            border-spacing: 0;
+            border: 1px solid white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        table th{
+
+            border-bottom: 1px solid gray;
+            vertical-align: top;
+        }
+        table tr:nth-child(odd) {
+            background-color: rgb(196, 196, 196);
+            color: rgb(61, 61, 61);
+            
+        }
+        table td:nth-child(n) {
+            width: 20%;
+        }
+        table td:nth-child(2n) {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Tas</th>
+                <th>Kap</th>
+                <th>Inci</th>
+            </tr>
+            <tr>
+                <td>opak</td>
+                <td>siyah</td>
+                <td>beyaz</td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
